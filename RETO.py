@@ -1,3 +1,4 @@
+#simon betancur: 202010013010 - daniel garcia: 202010064010
 import time
 n= int(input("digite un numero: "))
 def get_recursive_factorial(n):
