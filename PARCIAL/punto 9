@@ -1,0 +1,32 @@
+def pascal(row, column):
+    if row < 0 and column < 0:
+        return 0
+    elif row == 0 and column == 0:
+        return 1
+    elif row > 0 and column == 0:
+        return 1
+    elif row > 0 and column > 0:
+        return a
+
+x=int(input("digite numero de filas para imprimir el triangulo de pascal: "))
+row=int(input("digite numero de fila del elemento: "))
+column=int(input("digite numero de columna del elemento: "))
+n=0
+k=0
+a=0
+import math 
+while (n<=x):
+    while(k<=n):
+        c=n-k
+        k1=math.factorial(c)*math.factorial(k)
+        respuesta=int(math.factorial(n)/k1)
+        if n==row:
+            if k==column:
+                a=respuesta
+        k=k+1
+        print(respuesta, end=" ")
+    print("")
+    n=n+1
+    k=0
+
+print("el elemento pedido es:",pascal(row, column))
