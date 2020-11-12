@@ -1,0 +1,13 @@
+Pila_1=[1,2,3,4,5]
+Pila_2=[]
+len(Pila_1)
+print("ANTES")
+print("Pila #1: ", Pila_1)
+print("Pila #2: ", Pila_2)
+
+for i in range(len(Pila_1)):
+    Pila_2.append(Pila_1.pop())
+
+print("DESPUES")
+print("Pila #1: ", Pila_1)
+print("Pila #2: ", Pila_2)
