@@ -1,0 +1,89 @@
+class Alumno:
+    def __init__(self, nombre, edad, gustos):
+        self.nombre = nombre
+        self.edad = edad
+        self.gustos = gustos
+    def __str__(self):
+       return self.nombre+' - '+str(self.edad)+' años - '+str(self.gustos)
+class Nodo:
+    def __init__(self, datos):
+        self.datos = datos
+        self.siguiente = None
+
+primero = None
+alumno = Alumno('JUAN FELIPE AGUDELO VELEZ', 17, 'le gusta el blues y jazz, toca la guitarra electrica, estudia ingenieria matematica')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('SIMON GOMEZ ARANGO', 17, 'le gusta escuhcar musica, leer libros y ver peliculas')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('JOSE MIGUEL BLANCO', 17, 'le gusta el trap, juega a videojuegos tipo RPG y le gusta ver streamings de Tylerl o Asmonbald')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('DONOVAN CASTRILLON BLANCO', 17, 'le gusta el baloncesto, ver anime, domir hasta tarde y de escuhcar la bebesita bebe lean')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('DANIEL GARCIA SALCEDO', 18, 'gusta de hacer y escuhcar freestyle, aparte es un viciado a los shooters')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('DANIEL GONZALES BERNAL', 29, 'le encanta viajar alrededor de colombia y tiene una pasion por las motos, antes estudiaba medicina')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('HAROLD STEVEN GONZALES', 17, 'le gusta leer, jugar videojuegos y ver peliculas, le gustan las matematicas')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('DANIEL ANDRES HERNANDEZ OYOLA', 17, 'le gusta los deportes, la comida, la musica y los videojuegos como halo')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('JUAN FELIPE MARTINEZ BEDOYA', 20, 'le gusta leer, jugar videojuegos de tipo MOBA Y RPG, ademas le gusta el futbol e ir al gimnasio')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('JULIAN ANDRES MAZO ZAPATA', 17, 'le gusta tocar la guitarra tanto electrica como acustica, leer y jugar videojuegos RPG')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('MYLLE SARLETH MOSQUERA RIVAS', 17, 'le gusta la musica como la salsa o bachata,aparte le gusta bailar, dinujar y leer')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('JUAN MANUEL MUÑOZ ARIAS', 18, 'le gusta escuhcar musica como gorillaz, alcolirykoz y eri gey, ademas de jugar videojuegos')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('JAYDER OCHOA CARVAJAL', 17, 'le gusta ver anime y peliculas, se le da bien dibujar')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('SANTIAGO PARRA MEJIA', 16, 'le gusta tocar el piano, el muy deboto con su religion, le gustan las matematicas')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('JOSE MANUEL RAMIREZ GOMEZ', 17, 'le gusta hacer musica electronica y jugar videojuegos tipo shooter')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('DIEGO VELASQUEZ VARELA', 17, 'le gusta tocar la guitarra y la armonica, su pelicula favorita es intestellar')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('SALOMON VELEZ PEREZ', 17, 'le gusta escribir y jugar videojuegos como LOL u Overwatch')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+alumno = Alumno('CRISTIAN CAMILO ZAPATA GARCIA', 18, 'le gusta jugar videojuegos y ver anime, anela viajar y probar de todo')
+nodo = Nodo(alumno)
+nodo.siguiente = primero
+primero = nodo
+n = primero
+while n != None:
+ print(n.datos)
+ n = n.siguiente
